@@ -128,13 +128,6 @@ if classifier_name=="LogisticRegression":
     plt.ylabel('Actual')
     st.pyplot()
 
-"""elif classifier_name=="Decision Tree":
-    fig = plt.figure(figsize=(100, 50))
-    tree.plot_tree(clf, feature_names=["specific gravity", "hemoglobin", "packed cell volume"],class_names=["ckd", "notckd", ""], filled=True)
-    plt.show()
-    st.pyplot(fig)"""
-
-
 elif classifier_name == "Random Forest":
     # Plot the aggregated decision tree from Random Forest
     if hasattr(clf, "estimators_") and len(clf.estimators_) > 0:
