@@ -33,7 +33,7 @@ df=pd.read_csv("data.csv")
 st.title("KidneyInsight: Predictive Analytics for Chronic Kidney Disease ")
 classifier_name = st.sidebar.selectbox(
     'Select classifier',
-    (None,'LogisticRegression', 'KNN','Decision Tree' ,'Random Forest')
+    ('LogisticRegression', 'KNN','Decision Tree' ,'Random Forest')
 )
 specific_gravity = st.number_input("Enter specific_gravity value", step=0.01, format="%.2f")
 hemoglobin=st.number_input("Enter hemoglobin value",step=0.01, format="%.2f")
