@@ -27,6 +27,11 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
+st.set_page_config(
+    page_title="Kidney Disease Pridictor",
+    page_icon="🏥",
+)
+
 
 df=pd.read_csv("data.csv")
 
