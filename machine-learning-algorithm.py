@@ -173,6 +173,8 @@ else:
     else:
         st.write("Cannot visualize decision boundary for more than two features.")
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 
 
 
