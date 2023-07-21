@@ -121,10 +121,10 @@ if button:
     df_report
 
 
-
-if classifier_name=="LogisticRegression":
-
-
+if classifier_name==None:
+    st.write("Please Select The Classifier")
+    
+elif classifier_name=="LogisticRegression":
     confusion_matrix = pd.crosstab(y_test, y_pred, rownames=['Actual'], colnames=['Predicted'])
     st.write('Confusion Matrix Heatmap:')
     plt.figure(figsize=(6, 4))
